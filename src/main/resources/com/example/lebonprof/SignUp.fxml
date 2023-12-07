@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lebonprof.SignUpController">
+    <children>
+        <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="997.0" style="-fx-background-color: #FFFFFF;" VBox.vgrow="ALWAYS">
+            <Pane layoutX="326.0" layoutY="111.0" prefHeight="369.0" prefWidth="242.0" style="-fx-background-color: #a6a6a6; -fx-background-radius: 20px;" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="111.0">
+                <children>
+                    <Label layoutX="24.0" layoutY="49.0" prefHeight="16.0" prefWidth="68.0" style="-fx-font-size: 10px; -fx-font-weight: bold; -fx-text-fill: #0d2d52;" text="First name" />
+                    <Label layoutX="24.0" layoutY="156.0" prefHeight="16.0" prefWidth="68.0" style="-fx-font-size: 10px; -fx-font-weight: bold; -fx-text-fill: #0d2d52;" text="Email" />
+                    <Label layoutX="24.0" layoutY="100.0" prefHeight="16.0" prefWidth="68.0" style="-fx-font-size: 10px; -fx-font-weight: bold; -fx-text-fill: #0d2d52;" text="Last name" />
+                    <TextField fx:id="l_nameField" layoutX="14.0" layoutY="116.0" prefHeight="25.0" prefWidth="203.0" style="-fx-border-radius: 20px; -fx-background-radius: 20px; -fx-border-color: black;" />
+                    <TextField fx:id="EmailField" layoutX="14.0" layoutY="174.0" prefHeight="25.0" prefWidth="203.0" style="-fx-border-radius: 20px; -fx-background-radius: 20px; -fx-border-color: black;" />
+                    <Button layoutX="14.0" layoutY="334.0" onAction="#Register_As_student" prefHeight="25.0" prefWidth="106.0" style="-fx-background-radius: 20px; -fx-background-color: #0d2d52; -fx-border-radius: 20px;" text="étudiant(e)" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Button>
+                    <TextField fx:id="contactField" layoutX="14.0" layoutY="235.0" prefHeight="25.0" prefWidth="203.0" style="-fx-border-radius: 20px; -fx-background-radius: 20px; -fx-border-color: black;" />
+                    <Label layoutX="21.0" layoutY="211.0" prefHeight="16.0" prefWidth="74.0" style="-fx-font-size: 10px; -fx-font-weight: bold; -fx-text-fill: #0d2d52;" text="Phone number" />
+                    <Label layoutX="67.0" layoutY="14.0" prefHeight="35.0" prefWidth="112.0" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #0d2d52;" text="Sign up" />
+                    <Button layoutX="126.0" layoutY="334.0" onAction="#Register_As_Professor" prefHeight="25.0" prefWidth="106.0" style="-fx-background-radius: 20px; -fx-background-color: #0d2d52; -fx-border-radius: 20px;" text="Prof" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Button>
+                    <ChoiceBox fx:id="choiceBox" layoutX="51.0" layoutY="282.0" prefWidth="150.0" />
+                    <TextField fx:id="f_nameField" layoutX="14.0" layoutY="65.0" prefHeight="25.0" prefWidth="203.0" style="-fx-border-radius: 20px; -fx-background-radius: 20px; -fx-border-color: black;" />
+
+                </children>
+                <padding>
+                    <Insets bottom="0.33" right="44.0" top="87.0" />
+                </padding>
+            </Pane>
+
+            <Button layoutX="47.0" layoutY="499.0" onAction="#LoginUI" prefHeight="25.0" prefWidth="106.0" style="-fx-background-radius: 20px; -fx-background-color: #0d2d52; -fx-border-radius: 20px;" text="Login" textFill="WHITE" AnchorPane.leftAnchor="47.0" AnchorPane.topAnchor="499.0">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Button>
+            <HBox layoutY="-1.0" prefHeight="75.0" prefWidth="609.0" style="-fx-background-color: #0d2d52;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-9.0">
+                <children>
+                    <Label prefHeight="75.0" prefWidth="257.0" text="Le Bon Prof" textFill="WHITE">
+                        <font>
+                            <Font name="Baskerville Old Face" size="42.0" />
+                        </font>
+                    </Label>
+                </children>
+            </HBox>
+         <Pane layoutX="47.0" layoutY="111.0" prefHeight="375.0" prefWidth="242.0" style="-fx-background-color: #a6a6a6; -fx-background-radius: 20px;" AnchorPane.leftAnchor="47.0" AnchorPane.topAnchor="111.0">
+            <children>
+               <Label layoutX="31.0" layoutY="21.0" prefHeight="35.0" prefWidth="197.0" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #0d2d52;" text="Cours individuel" />
+               <ChoiceBox fx:id="choiceBox_students" layoutX="37.0" layoutY="82.0" prefHeight="25.0" prefWidth="169.0" />
+               <ChoiceBox fx:id="choiceBox_professors" layoutX="37.0" layoutY="175.0" prefHeight="25.0" prefWidth="169.0" />
+               <DatePicker fx:id="mydatepicker" layoutX="37.0" layoutY="227.0" prefHeight="25.0" prefWidth="169.0" />
+               <Button layoutX="59.0" layoutY="289.0" onAction="#Create_individual_session" prefHeight="25.0" prefWidth="106.0" style="-fx-background-radius: 20px; -fx-background-color: #0d2d52; -fx-border-radius: 20px;" text="Comfirm" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Button>
+               <ChoiceBox fx:id="choiceBox1" layoutX="40.0" layoutY="127.0" prefHeight="25.0" prefWidth="169.0" />
+            </children>
+            <padding>
+               <Insets bottom="0.33" right="44.0" top="87.0" />
+            </padding>
+         </Pane>
+         <TabPane layoutX="290.0" layoutY="109.0" prefHeight="440.0" prefWidth="430.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="277.0" AnchorPane.topAnchor="109.0">
+           <tabs>
+             <Tab text="données">
+               <content>
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="285.0">
+                        <children>
+                           <TableView fx:id="Person_table" layoutY="46.0" prefHeight="259.0" prefWidth="430.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                              <columns>
+                                 <TableColumn fx:id="idc" prefWidth="45.33331298828125" text="ID" />
+                                 <TableColumn fx:id="first_namec" prefWidth="88.66671752929688" text="First Name" />
+                                 <TableColumn fx:id="last_namec" prefWidth="94.6666259765625" text="Last Name" />
+                                 <TableColumn fx:id="emailc" prefWidth="92.0" text="Email" />
+                                 <TableColumn fx:id="contactNumberc" prefWidth="109.33331298828125" text="Phone Number" />
+                                 <TableColumn fx:id="" prefWidth="53.33331298828125" />
+                              </columns>
+                           </TableView>
+                           <Button layoutX="8.0" layoutY="14.0" onAction="#Display_students" prefHeight="25.0" prefWidth="122.0" style="-fx-background-radius: 20px; -fx-background-color: #0d2d52; -fx-border-radius: 20px;" text="afficher les élèves" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold" size="12.0" />
+                              </font>
+                           </Button>
+                           <Button layoutX="137.0" layoutY="14.0" onAction="#Display_Professors" prefHeight="25.0" prefWidth="122.0" style="-fx-background-radius: 20px; -fx-background-color: #0d2d52; -fx-border-radius: 20px;" text="afficher les profs" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold" size="12.0" />
+                              </font>
+                           </Button>
+
+                        </children>
+                     </AnchorPane>
+               </content>
+             </Tab>
+             <Tab text="prochaines séances individuelles">
+               <content>
+                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="393.0" prefWidth="430.0">
+                        <children>
+                           <ListView fx:id="future_individual_sessions" layoutY="55.0" prefHeight="354.0" prefWidth="430.0" AnchorPane.bottomAnchor="-115.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0" />
+                           <Button layoutX="14.0" layoutY="14.0" onAction="#delete_individual_session" prefHeight="16.0" prefWidth="106.0" style="-fx-background-radius: 20px; -fx-background-color: #0d2d52; -fx-border-radius: 20px;" text="Annuler" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold" size="12.0" />
+                              </font>
+                           </Button>
+                           <Button layoutX="131.0" layoutY="14.0" onAction="#undo" prefHeight="16.0" prefWidth="106.0" style="-fx-background-radius: 20px; -fx-background-color: #0d2d52; -fx-border-radius: 20px;" text="Undo" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold" size="12.0" />
+                              </font>
+                           </Button>
+                           <Button layoutX="254.0" layoutY="14.0" onAction="#undo" prefHeight="16.0" prefWidth="106.0" style="-fx-background-radius: 20px; -fx-background-color: #0d2d52; -fx-border-radius: 20px;" text="Enregistrer" textFill="WHITE">
+                              <font>
+                                 <Font name="System Bold" size="12.0" />
+                              </font>
+                           </Button>
+                        </children>
+                     </AnchorPane>
+               </content>
+             </Tab>
+               <Tab text="séances individuelles passées">
+                  <content>
+                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                           <ListView fx:id="past_individual_sessions" prefHeight="291.0" prefWidth="430.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        </children>
+                     </AnchorPane>
+                  </content>
+               </Tab>
+               <Tab text="session à venir">
+                  <content>
+                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+                           <ListView fx:id="future_sessions" prefHeight="291.0" prefWidth="430.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        </children>
+                     </AnchorPane>
+                  </content>
+               </Tab>
+               <Tab text="sessions passées">
+                  <content>
+                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="285.0">
+                        <children>
+                           <ListView fx:id="past_sessions" prefHeight="291.0" prefWidth="430.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        </children>
+                     </AnchorPane>
+                  </content>
+               </Tab>
+           </tabs>
+         </TabPane>
+         <Button layoutX="738.0" layoutY="498.0" onAction="#delete_individual_session" prefHeight="16.0" prefWidth="106.0" style="-fx-background-radius: 20px; -fx-background-color: #0d2d52; -fx-border-radius: 20px;" text="Enregister" textFill="WHITE" AnchorPane.rightAnchor="153.33333333333337">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+         </Button>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </AnchorPane>
+    </children>
+</VBox>

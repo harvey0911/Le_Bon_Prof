@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lebonprof.LoginController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fffffff;">
+            <Pane layoutX="326.0" layoutY="87.0" prefHeight="273.0" prefWidth="230.0" style="-fx-border-radius: 20px; -fx-background-color: #a6a6a6; -fx-opacity: 0.3; -fx-background-radius: 20px;" AnchorPane.bottomAnchor="39.666666666666686" AnchorPane.rightAnchor="44.0">
+                <children>
+
+
+                </children>
+            </Pane>
+   
+                     <Pane layoutX="326.0" layoutY="87.0" prefHeight="273.0" prefWidth="230.0" AnchorPane.bottomAnchor="39.666666666666686" AnchorPane.rightAnchor="44.0">
+                <children>
+                    <Button layoutX="62.0" layoutY="205.0" onAction="#Login" prefHeight="25.0" prefWidth="106.0" style="-fx-background-radius: 20px; -fx-background-color: #0d2d52; -fx-border-radius: 20px;" text="Login" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Button>
+                    <PasswordField fx:id="passwordField" layoutX="13.0" layoutY="165.0" prefHeight="25.0" prefWidth="203.0" style="-fx-background-radius: 20px; -fx-border-radius: 20px; -fx-border-color: black;" />
+                    <TextField fx:id="usernameField" layoutX="13.0" layoutY="103.0" prefHeight="25.0" prefWidth="203.0" style="-fx-border-radius: 20px; -fx-background-radius: 20px; -fx-border-color: black;" />
+                    <Label layoutX="73.0" layoutY="14.0" prefHeight="35.0" prefWidth="68.0" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #0d2d52;" text="Login" />
+                    <Label layoutX="28.0" layoutY="87.0" prefHeight="16.0" prefWidth="68.0" style="-fx-font-size: 10px; -fx-font-weight: bold; -fx-text-fill: #0d2d52;" text="Username" />
+                    <Label layoutX="28.0" layoutY="149.0" prefHeight="16.0" prefWidth="68.0" style="-fx-font-size: 10px; -fx-font-weight: bold; -fx-text-fill: #0d2d52;" text="Password" />
+                </children>
+            </Pane>
+         <CubicCurve controlX1="-0.3333282470703125" controlX2="-263.0" controlY1="-86.99999237060547" controlY2="182.33334350585938" endX="331.66668701171875" endY="-93.99999237060547" fill="#0d2d52" layoutX="171.0" layoutY="94.0" startX="-171.00001525878906" startY="-93.99999237060547" stroke="BLACK" AnchorPane.leftAnchor="0.4974772135416856" AnchorPane.rightAnchor="96.169189453125" AnchorPane.topAnchor="-1.1641387939453125" />
+         <ImageView fitHeight="273.0" fitWidth="291.0" layoutX="10.0" layoutY="113.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="301.0" AnchorPane.topAnchor="113.0">
+            <image>
+               <Image url="@le_bon_prof-removebg.png" />
+            </image>
+         </ImageView>
+        </AnchorPane>
+    </children>
+</VBox>
