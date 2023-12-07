@@ -162,7 +162,7 @@ Boolean loggedIn;
 
 
 
-                // Create a Student instance and add it to the TableView
+                // Create a com.example.lebonprof.Student instance and add it to the TableView
 
                 Person person = new Person( id,  first_name, last_name,  email, contactNumber);
                 studentList.add(person);
@@ -200,7 +200,7 @@ Boolean loggedIn;
 
 
 
-                // Create a Student instance and add it to the TableView
+                // Create a com.example.lebonprof.Student instance and add it to the TableView
 
                 Person person = new Person( id,  first_name, last_name,  email, contactNumber);
                 studentList.add(person);
@@ -236,7 +236,7 @@ Boolean loggedIn;
 
 
 
-                // Create a Student instance and add it to the TableView
+                // Create a com.example.lebonprof.Student instance and add it to the TableView
 
                 Person person = new Person( id,  first_name, last_name,  email, contactNumber);
                 studentList.add(person);
@@ -269,7 +269,7 @@ Boolean loggedIn;
                 String Subject_name = resultSet.getString("Subject_name");
 
 
-                // Create a Student instance and add it to the TableView
+                // Create a com.example.lebonprof.Student instance and add it to the TableView
 
                 Subject subject = new Subject( Subject_name,id);
                 SubjectList.add(subject);

@@ -86,7 +86,7 @@ int salle;
     @Override
     public String toString() {
         return "Private Session Details:\n"
-                + "Student: " + student.getFirst_name()+ "\n"
+                + "com.example.lebonprof.Student: " + student.getFirst_name()+ "\n"
                 + "Prof: " + professor.getFirst_name()+ "\n"
                 + "matière: " + subject.getSubject()+ "\n"
                 + "Date: " + date + "\n"

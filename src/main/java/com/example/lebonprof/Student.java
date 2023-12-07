@@ -1,3 +1,5 @@
+package com.example.lebonprof;
+
 public class Student {
 
 
@@ -40,7 +42,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "com.example.lebonprof.Student{" +
                 "first_name='" + first_name + '\'' +
                 ", last_name='" + last_name + '\'' +
                 ", amount=" + amount +

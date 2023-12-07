@@ -35,7 +35,7 @@ public class DashboardController {
 
     @FXML
     public void initialize() {
-        // Initialize the TableView columns and associate them with the Student properties
+        // Initialize the TableView columns and associate them with the com.example.lebonprof.Student properties
         idc.setCellValueFactory(new PropertyValueFactory<>("id"));
         first_namec.setCellValueFactory(new PropertyValueFactory<>("first_name"));
         last_namec.setCellValueFactory(new PropertyValueFactory<>("last_name"));
